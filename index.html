@@ -18,6 +18,9 @@
             body {
                 font-family: "Lounge", sans-serif;
             }
+            
+
+
         </style>
         <meta charset="utf-8" />
         <title>Find The Eggs</title>
@@ -25,7 +28,6 @@
         <meta content="This is the official website for Find The Eggs on Roblox!" property="og:description" />
         <meta content="https://findtheeggs.github.io" property="og:url" />
         <meta content="images/FindTheEggsLogoStylish.png" property="og:image" />
-        <meta content="#ffc847" data-react-helmet="true" name="theme-color" />
         <link rel="icon" type="image/x-icon" href="/Assets/FindTheEggsLogoStylish.ico" />
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js"></script>
@@ -33,10 +35,8 @@
 
     <body onload="onPageLoaded()">
         <div id="mainDiv">
-            <img id="logo" alt="logo" src="images/FindTheEggsLogoStylish.png" />
-            <div id="MainText">
-                <h1>Find The Eggs</h1>
-            </div>
+            <img id="logo" alt="logo" src="images/FindTheEggsLogoStylish.png"  />
+            
             <div id="Text">
                 <h2>Check out the trailer!</h2>
             </div>
@@ -54,44 +54,18 @@
                 type="button"
                 value="Try the game out!"
                 onclick="window.open('https://www.roblox.com/games/start?placeId=129362219396182&launchData=bmV0d29ya0VnZw', '_blank');" />
+            
+            <div id="updateThing">
+                <div id="updText">
+                    <h2>Latest Update: New Years Update</h2>
+                </div>
+                <img id="updImg" alt="Update Image" src="images/updateThumbnail.png"
+                    
+                />
+            </div>
         </div>
-        <img id="cloudLeftTop" alt="cloud" src="images/vector-top-left.png" />
-        <img id="cloudBottomRight" alt="cloud" src="images/vector-bottom-right.png" />
 
-        <img
-            class="clouds"
-            alt="cloud"
-            style="z-index: 3; transform: translate(0px, -1.55909px)"
-            src="images/cloud1.svg" />
-        <img
-            class="clouds"
-            alt="cloud"
-            style="z-index: 6; transform: translate(0px, -2.33863px)"
-            src="images/cloud2.svg" />
-        <img
-            class="clouds"
-            alt="cloud"
-            style="z-index: 5; transform: translate(0px, -3.89772px)"
-            src="images/cloud3.svg" />
-        <img
-            class="clouds"
-            alt="cloud"
-            style="z-index: 6; transform: translate(0px, -3.89772px)"
-            src="images/cloud4.svg" />
-        <div class="night">
-            <div class="shooting_star">
-                <div class="shooting_star" />
-            </div>
-        </div>
-        <div class="night">
-            <div class="shooting_star">
-                <div class="shooting_star" />
-            </div>
-        </div>
-        <div class="night">
-            <div class="shooting_star">
-                <div class="shooting_star" />
-            </div>
-        </div>
+        
+
     </body>
 </html>
