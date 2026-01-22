@@ -71,7 +71,10 @@ img {
 }
 #MainText {
     text-align: center !important;
-    
+    font-size: 3.09rem;
+    font-weight: 500;
+    line-height: 3.9;
+    margin-top: 0;
 }
 
 h1 {
