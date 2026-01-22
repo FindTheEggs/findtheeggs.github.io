@@ -1,3 +1,8 @@
+html {
+    font-size: clamp(14px, 1.1vw, 18px);
+}
+
+
 body {
     background: #000a2e;
     overflow: hidden;
@@ -29,15 +34,19 @@ img {
 
 #mainDiv {
     color: #ffffffef;
-    top: 35%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
     z-index: 8;
-    align-items: center;
-    justify-content: center;
+
     display: flex !important;
     flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 90vw;
+    gap: 1rem;
 }
 
 #logo {
@@ -63,24 +72,28 @@ img {
         flex-direction: column !important;
     }
 
-    #logo {
-        vertical-align: middle;
-        position: relative;
-        display: flex;
-    }
+#logo {
+    height: clamp(120px, 17vh, 220px);
+    max-width: 90vw;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+
 }
 #MainText {
     text-align: center !important;
-    font-size: 3.09rem;
+    font-size: clamp(1.8rem, 4vw, 3.09rem);
     font-weight: 500;
-    line-height: 3.9;
+    line-height: 1.2;
     margin-top: 0;
 }
 
 h1 {
-    font-size: 5.06rem;
+    font-size: clamp(2.6rem, 6vw, 5.06rem);
     font-weight: 500;
-    line-height: 3.9;
+    line-height: 1.1;
     margin-top: 0;
 }
 
@@ -121,6 +134,8 @@ h1 {
     bottom: 10%;
     right: -20px;
     z-index: 1;
+        max-width: 45vw;
+    height: auto;
 }
 
 .night {
@@ -139,10 +154,10 @@ h1 {
     border: none;
     cursor: pointer;
     transition-duration: 0.4s;
-    width: 150px;
-    height: 50px;
+    width: clamp(130px, 30vw, 180px);
+    height: clamp(44px, 7vh, 56px);
+    font-size: clamp(1.38rem, 2.5vw, 1.1rem);
     border-radius: 8px;
-    font-size: large
 }
 
 .button:hover{
