@@ -18,6 +18,7 @@ body::before {
     filter: blur(8px);
     transform: scale(1.05);
     z-index: -1;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 
