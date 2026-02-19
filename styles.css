@@ -4,8 +4,8 @@ html {
 
 
 body {
-    margin: 0;
-    min-height: 134vh;
+    margin: 105;
+    min-height: 150vh;
     position: relative;
     overflow-y: scroll;
 }
@@ -47,6 +47,57 @@ img {
     max-width: 90vw;
 }
 
+#bottomBar {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(17px 10px 34px #381800);
+    max-width: 90vw;
+}
+
+#mediaText {
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(17px 10px 34px #381800);
+    max-width: 90vw;
+    font-size: clamp(1.2rem, 2vw, 1.83rem);
+    -webkit-text-stroke: 2px #cc7f00;
+    text-shadow: 4px 4px 11px #000;
+    color: #ffd86eff;
+    font-weight: 59;
+    line-height: 0;
+    margin-top: 0;
+    text-align: center
+}
+
+#eggText {
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(17px 10px 34px #381800);
+    max-width: 90vw;
+    font-size: clamp(1.2rem, 2vw, 2.17rem);
+    -webkit-text-stroke: 2px #cc7f00;
+    text-shadow: 4px 4px 11px #000;
+    color: #ffd86eff;
+    font-weight: 59;
+    line-height: 0;
+    margin-top: 0;
+    text-align: center
+}
+
+#mediaList {
+    display: table-cell;
+    justify-content: space-around; /* Distributes space evenly between and around images */
+    gap: 10px; /* Adds consistent space between images */
+    flex-direction:row;
+    vertical-align:middle;
+}
+
 h1 {
     font-size: clamp(2.6rem, 6vw, 5.25rem);
     font-weight: 500;
@@ -68,7 +119,7 @@ h1 {
 }
 
 #updateThing {
-    font-size: clamp(1.8rem, 4vw, 1.82rem);
+    font-size: clamp(1.2rem, 2vw, 1.39rem);
     -webkit-text-stroke: 2px #cc7f00;
     text-shadow: 4px 4px 11px #000;
     color: #ffd86eff;
@@ -79,12 +130,16 @@ h1 {
 }
 
 #updImg {
-    width: min(520px, 90vw);
+    width: min(288px, 90vw);
     height: auto;
     padding: 10px;
     box-sizing: border-box;
     filter: drop-shadow(17px 10px 34px #381800);
     border-radius: 20px;
+}
+
+#discordicon {
+    color: royalblue;
 }
 
 
