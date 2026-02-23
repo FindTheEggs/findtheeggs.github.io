@@ -82,7 +82,7 @@ img {
     transform: translate(-50%, -50%);
     filter: drop-shadow(17px 10px 34px #381800);
     max-width: 90vw;
-    font-size: clamp(1.2rem, 2vw, 2.17rem);
+    font-size: clamp(1.9rem, 41vw, 0.64rem);
     -webkit-text-stroke: 2px #cc7f00;
     text-shadow: 4px 4px 11px #000;
     color: #ffd86eff;
