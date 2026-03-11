@@ -12,17 +12,6 @@ body {
     overflow-y: scroll;
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url("../images/fteThumbnail.png") center / cover no-repeat;
-    filter: blur(8px);
-    transform: scale(1.05);
-    z-index: -1;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
 
 img {
     vertical-align: middle;
@@ -47,6 +36,41 @@ img {
     align-items: center;
     justify-content: center;
     max-width: 90vw;
+}
+
+#mainDivChangelogs {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+}
+
+#mainDivChangelogs2 {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+}
+
+#mainDivChangelogsText {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 68vw;
 }
 
 #bottomBar {
@@ -77,12 +101,12 @@ img {
 
 #eggText {
     position: absolute;
-    top: 74%;
+    top: 81%;
     left: 50%;
     transform: translate(-50%, -50%);
     filter: drop-shadow(17px 10px 34px #381800);
     max-width: 90vw;
-    font-size: clamp(1.9rem, 41vw, 0.64rem);
+    font-size: clamp(0.1rem, 2vw, 2rem);
     -webkit-text-stroke: 2px #cc7f00;
     text-shadow: 4px 4px 11px #000;
     color: #ffd86eff;
@@ -120,6 +144,69 @@ h1 {
     text-align: center
 }
 
+.ChangelogTitle {
+    font-size: clamp(0.1rem, 2vw, 2.38rem);
+    -webkit-text-stroke: 2px #cc7f00;
+    text-shadow: 4px 4px 11px #000;
+    color: #ffd86eff;
+    font-weight: 20;
+    line-height: -1;
+    margin-top: 0;
+    text-align: center
+}
+
+.ChangelogText {
+    font-size: clamp(0.1rem, 2vw, 0.98rem);
+    -webkit-text-stroke: 0.5px #cc7f00;
+    text-shadow: 4px 4px 11px #000;
+    color: #ffd86eff;
+    font-weight: 20;
+    line-height: normal;
+    margin-top: 0;
+    text-align: center
+}
+
+.button-link {
+  background-color: #ffab00; /* Example background color */
+    -webkit-text-stroke: 1px #cc7f00;
+        text-shadow: 4px 4px 11px #000;
+  color: white; /* Example text color */
+  padding: 17px 66px; /* Adds space around the text */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes the default underline */
+  display: inline-block; /* Allows setting padding and margin */
+  cursor: pointer; /* Changes the cursor to a hand icon */
+  border-radius: 8px; /* Rounds the corners */
+        filter: drop-shadow(17px 10px 34px #381800);
+    font-size: clamp(0.5rem, 6vw, 1.98rem);
+        border: 5px solid black;
+}
+
+.button-link:hover {
+  background-color: #ffbc34; /* Optional hover effect */
+}
+
+.button-linkIndex {
+  background-color: #ffab00; /* Example background color */
+    -webkit-text-stroke: 1px #cc7f00;
+        text-shadow: 4px 4px 11px #000;
+  color: white; /* Example text color */
+  padding: 17px 90px; /* Adds space around the text */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes the default underline */
+  display: inline-block; /* Allows setting padding and margin */
+  cursor: pointer; /* Changes the cursor to a hand icon */
+  border-radius: 8px; /* Rounds the corners */
+        filter: drop-shadow(17px 10px 34px #381800);
+    font-size: clamp(0.5rem, 6vw, 1.98rem);
+        border: 5px solid black;
+        line-height: 1;
+}
+
+.button-linkIndex:hover {
+  background-color: #ffbc34; /* Optional hover effect */
+}
+
 #updateThing {
     font-size: clamp(1.2rem, 2vw, 1.39rem);
     -webkit-text-stroke: 2px #cc7f00;
@@ -135,6 +222,14 @@ h1 {
     width: min(288px, 90vw);
     height: auto;
     padding: 10px;
+    box-sizing: border-box;
+    filter: drop-shadow(17px 10px 34px #381800);
+    border-radius: 20px;
+}
+
+#updateButton {
+    height: auto;
+    padding: 20px;
     box-sizing: border-box;
     filter: drop-shadow(17px 10px 34px #381800);
     border-radius: 20px;
@@ -198,17 +293,13 @@ h1 {
     font-weight: normal;
     font-style: normal;
     background-color: darkorange;
-    border: none;
     cursor: pointer;
     transition-duration: 0.4s;
     width: clamp(225px, 30vw, 180px);
     height: clamp(88px, 7vh, 56px);
-    font-size: clamp(1.6rem, 5.3vw, 1.6rem);
+    font-size: clamp(0.7rem, 5.3vw, 1.2rem);
     border-radius: 8px;
-}
-
-.button:hover{
-    background-color: orange;
+    border: 5px solid black;
 }
 
 .shooting_star {

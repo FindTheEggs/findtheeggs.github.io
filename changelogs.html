@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <style>
+            h1 {
+                color: #ffb225;
+            }
+            .trailer-text {
+                color: #1065ff;
+            }
+            @font-face {
+                font-family: "Lounge";
+                src: url("Assets/ShagLounge.woff2") format("woff2");
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            body {
+                font-family: "Lounge", sans-serif;
+            }
+            
+            body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/fteThumbnail.png") center / cover repeat;
+    filter: blur(8px);
+    transform: scale(1.05);
+    z-index: -1;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+        </style>
+        <meta charset="utf-8" />
+        <title>Find The Eggs Website | Changelogs</title>
+        <meta content="Find The Eggs Website" property="og:title" />
+        <meta content="This is the official website for Find The Eggs on Roblox!" property="og:description" />
+        <meta content="https://findtheeggs.github.io" property="og:url" />
+        <meta content="images/FindTheEggsLogoStylish.png" property="og:image" />
+        <link rel="icon" type="image/x-icon" href="/Assets/FindTheEggsLogoStylish.ico" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    </head>
+
+    <body onload="onPageLoaded()">
+        <div id="mainDiv">
+                    <div id="backButtonChangelogs">
+            <a href="index.html" class="button-link">Go back</a>
+        </div>
+            
+            <div id="Text">
+                <h2>Changelogs</h2>
+            </div>
+            <div>
+            <a class="updateButton" href="ChangelogsFolder/otherworldly.html"><img src="images/otherworldlyUpdate.png" width="150" height="150"/></a>
+            <a class="updateButton" href="ChangelogsFolder/christmas.html"><img src="images/christmasUpdate.png" width="150" height="150"/></a>
+            <a class="updateButton" href="ChangelogsFolder/valentines.html"><img src="images/valentinesUpdate.png" width="150" height="150"/></a>
+            <a class="updateButton" href="ChangelogsFolder/lunarnewyear.html"><img src="images/unknownUpdate.png" width="150" height="150"/></a>
+            </div>
+            
+
+        </div>
+
+        
+
+    </body>
+</html>

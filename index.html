@@ -19,11 +19,22 @@
                 font-family: "Lounge", sans-serif;
             }
             
+            body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/fteThumbnail.png") center / cover repeat;
+    filter: blur(8px);
+    transform: scale(1.05);
+    z-index: -1;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+            
 
 
         </style>
         <meta charset="utf-8" />
-        <title>Find The Eggs</title>
+        <title>Find The Eggs Website</title>
         <meta content="Find The Eggs Website" property="og:title" />
         <meta content="This is the official website for Find The Eggs on Roblox!" property="og:description" />
         <meta content="https://findtheeggs.github.io" property="og:url" />
@@ -53,7 +64,7 @@
                 id="button"
                 class="button"
                 type="button"
-                value="Try the game"
+                value="Play the game"
                 onclick="window.open('https://www.roblox.com/games/start?placeId=129362219396182&launchData=bmV0d29ya0VnZw', '_blank');" />
             //-->
             
@@ -71,6 +82,7 @@
         </div>
         <div id="eggText">
             <h2>Amount of eggs in the game: 115</h2>
+            <a href="changelogs.html" class="button-linkIndex">Check the changelogs</a>
         </div>
         <div id="mediaText">
             <h2>Look at our socials!</h2>
